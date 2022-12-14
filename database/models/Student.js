@@ -15,6 +15,26 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    defaultValue: ""
+  },
+
+  imageURL: {
+    type: Sequelize.STRING,
+    defaultValue: "https://www.commonsense.org/sites/default/files/png/2020-12/30-fun-ways-to-celebrate-the-end-of-the-school-year-from-a-distance-article.png"
+  },
+
+  gpa: {
+    type: Sequelize.FLOAT,
+    validate: {
+      // isFloat: true,
+      min: 0.0,
+      max: 4.0
+    }
   }
 });
 
