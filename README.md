@@ -2,6 +2,8 @@
 
 This repository is the server (back-end) starter code for Final Project (CRUD Application).
 
+Created by Maya Lavi (@mlavi16)
+
 ### Prerequisites
 - Install PostgreSQL (Postgres) [[link](https://www.postgresql.org/download/)] - required to run the database
 - Install Postman [[link](https://www.postman.com/downloads/)] - optional tool for API testing 
